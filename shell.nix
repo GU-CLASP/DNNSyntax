@@ -1,7 +1,8 @@
 
 { nixpkgs ? import <nixpkgs> {} }:
 let
-   nixpkgs_source = fetchTarball "https://d3g5gsiof5omrk.cloudfront.net/nixpkgs/nixpkgs-17.09pre108282.53835c93cb/nixexprs.tar.xz";
+   nixpkgs_source = fetchTarball https://github.com/NixOS/nixpkgs/archive/e496841aba2562c64891b73a2cb95c8d0b87a77c.tar.gz; # using .39 version of CUDA
+   # nixpkgs_source = fetchTarball "https://d3g5gsiof5omrk.cloudfront.net/nixpkgs/nixpkgs-17.09pre108282.53835c93cb/nixexprs.tar.xz"; # using .66
    # nixpkgs_source = ~/repo/nixpkgs;
    # nixpkgs_source = nixpkgs.fetchFromGitHub {
    #    #owner = "NixOS";
